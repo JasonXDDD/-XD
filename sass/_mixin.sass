@@ -1,0 +1,11 @@
+
+@mixin bg($name: "name", $bg: "jpg", $width: 300px)
+	$bgWidth: image-width("../images/#{$name}.#{$bg}")
+	$bgHeight: image-height("../images/#{$name}.#{$bg}") 
+
+	background: url("../images/#{$name}.#{$bg}") no-repeat
+	background-size: 100% auto
+	width: $width
+	height: $width * $bgHeight / $bgWidth
+	background-position: center center
+	margin: auto

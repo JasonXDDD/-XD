@@ -1,0 +1,45 @@
+@import _reset
+@import _mixin
+@import compass/css3
+
+body
+	aside
+		background-color: #000
+		display: block
+		position: fixed
+		width: 240px
+		height: 100%
+		top: 0
+		left: 0
+
+		nav
+			@extend %fontH1
+
+
+.headDiv
+	+bg(rank, png, 200px)
+	background-color: #3c3c3c
+	margin: 1em auto
+	display: flex
+
+	img
+		display: flex
+		align-items: center
+		width: 50%
+		height: auto
+		margin: auto	
+		+border-radius(50%)
+	
+	h1
+		display: block
+		position: fixed
+		left: 0
+		top: 180px
+		width: 240px
+		margin: 0
+
+		@extend %fontH1
+	
+.info
+	@extend %fontP
+	

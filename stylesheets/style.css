@@ -1,0 +1,73 @@
+/* line 1, ../sass/_reset.sass */
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "ROBOTO";
+  src: url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+}
+/* line 11, ../sass/_reset.sass */
+body aside nav, .headDiv h1, .info {
+  color: white;
+  font-family: "ROBOTO", "Microsoft JhengHei";
+  text-align: center;
+}
+
+/* line 17, ../sass/_reset.sass */
+body aside nav, .headDiv h1 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+/* line 26, ../sass/_reset.sass */
+.info {
+  font-size: 18px;
+  font-weight: 0;
+}
+
+/* line 6, ../sass/style.sass */
+body aside {
+  background-color: #000;
+  display: block;
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 19, ../sass/style.sass */
+.headDiv {
+  background: url("../images/rank.png") no-repeat;
+  background-size: 100% auto;
+  width: 200px;
+  height: 200px;
+  background-position: center center;
+  margin: auto;
+  background-color: #3c3c3c;
+  margin: 1em auto;
+  display: flex;
+}
+/* line 25, ../sass/style.sass */
+.headDiv img {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 33, ../sass/style.sass */
+.headDiv h1 {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 180px;
+  width: 240px;
+  margin: 0;
+}
