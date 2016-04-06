@@ -1,24 +1,67 @@
+// import font from google font
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono)
+
 @import _reset
 @import _mixin
 @import compass/css3
 
 body
-	aside 
-		background-color: rgba(0,0,0,.5)
-		display: block
+	main
+		background-color: rgba(0,0,0,.6)
 		position: fixed
-		width: 240px
+		width: 100%
 		height: 100%
-		top: 0
-		left: 0
+		left: 240px
+		top: 30px	
 
-		nav
-			@extend %fontH1
-			+bgColor(red)
 
-		hr
-			margin: 10% 8%
+//background
+.bg
+	width: 100%
+	height: 100%
+	display: block
+	position: fixed
+	z-index: -1
+	margin: 0
+	padding: 0
 
+
+//user nav
+.userNav 
+	background-color: rgba(0,0,0,.8)
+	display: block
+	position: fixed
+	width: 240px
+	height: 100%
+	top: 0
+	left: 0
+
+	hr
+		margin: 10% 8%
+
+	nav
+		ol
+			padding: 0
+
+			li
+				+bgColor(rgba( 0, 255, 255, .1))
+				list-style-type: none
+
+				\:hover
+					+bgColor(rgba( 0, 255, 255, .6))
+
+				\:first-letter
+					font-size: 30px
+					font-weight: 500
+					color: rgba(255, 100, 100, 1)
+
+				a
+					@extend %fontA
+					padding: 0 5%
+					display: block
+					weight: 100%
+						
+	
 
 .headDiv
 	+bg(rank, png, 200px)
@@ -48,13 +91,37 @@ body
 .info
 	@extend %fontP
 	
-.bg
-	width: 100%
-	height: 100%
-	display: block
-	position: absolute
-	z-index: -1
 
-	img
-		background-size: cover
-	
+//page nav
+.pageNav
+	// background-color: rgba(255, 100, 0, .6)
+	width: 100%
+	height: 30px
+	top: 0
+	position: fixed
+	display: block
+	left: 240px
+	z-index: 10
+
+	nav
+		ul 
+			list-style-type: none
+			padding: 0
+			margin: 0
+			overflow: hidden
+			background-color: rgba(255,100,100,.5)
+
+			li 
+				float: left
+				\:hover
+					+bgColor(rgba( 255, 0, 100, 1))
+				
+				a
+					@extend %fontH1
+					text-decoration: none
+					padding: .5em 2em
+					display: block
+					
+
+
+ 

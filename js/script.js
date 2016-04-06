@@ -14,3 +14,13 @@ $('.owl-carousel').owlCarousel({
     animateIn: 'fadeIn',
     animateOut: 'fadeOut'
 });
+
+
+angular
+	.module('module name', [])
+
+	.controller('mainCtrl', {'$scope', function ($scope) {
+		
+	}})
+
+
