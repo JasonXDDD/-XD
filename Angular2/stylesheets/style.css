@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+/* line 1, ../sass/_reset.sass */
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "ROBOTO";
+  src: url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+}
+/* line 12, ../sass/_reset.sass */
+.headDiv h1, .pageNav nav ul li a, .sitem h1, .info, .sitem p, .userNav nav ol li a {
+  color: white;
+  font-family: "Droid Sans Mono", "ROBOTO", "Microsoft JhengHei", sans-serif;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* line 18, ../sass/_reset.sass */
+.headDiv h1, .pageNav nav ul li a, .sitem h1 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+/* line 29, ../sass/_reset.sass */
+.info, .sitem p {
+  font-size: 18px;
+  font-weight: 0;
+}
+
+/* line 35, ../sass/_reset.sass */
+.userNav nav ol li a {
+  font-size: 25px;
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+/* line 9, ../sass/style.sass */
+body main {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  left: 240px;
+  top: 45px;
+}
+
+/* line 20, ../sass/style.sass */
+.bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, ../sass/style.sass */
+.userNav {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 40, ../sass/style.sass */
+.userNav hr {
+  margin: 10% 8%;
+}
+/* line 44, ../sass/style.sass */
+.userNav nav ol {
+  padding: 0;
+}
+/* line 47, ../sass/style.sass */
+.userNav nav ol li {
+  background-color: rgba(0, 255, 255, 0.1);
+  list-style-type: none;
+}
+/* line 51, ../sass/style.sass */
+.userNav nav ol li :hover {
+  background-color: rgba(0, 255, 255, 0.6);
+}
+/* line 54, ../sass/style.sass */
+.userNav nav ol li :first-letter {
+  font-size: 30px;
+  font-weight: 500;
+  color: #ff6464;
+}
+/* line 59, ../sass/style.sass */
+.userNav nav ol li a {
+  padding: 0 5%;
+  display: block;
+  weight: 100%;
+}
+
+/* line 67, ../sass/style.sass */
+.headDiv {
+  background: url("../images/rank.png") no-repeat;
+  background-size: 100% auto;
+  width: 200px;
+  height: 200px;
+  background-position: center center;
+  margin: auto;
+  margin: 1em auto;
+  display: flex;
+}
+/* line 73, ../sass/style.sass */
+.headDiv img {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+/* line 82, ../sass/style.sass */
+.headDiv h1 {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 180px;
+  width: 240px;
+  margin: 0;
+}
+
+/* line 97, ../sass/style.sass */
+.pageNav {
+  width: 100%;
+  height: 30px;
+  top: 0;
+  position: fixed;
+  display: block;
+  left: 240px;
+  z-index: 10;
+}
+/* line 108, ../sass/style.sass */
+.pageNav nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgba(255, 100, 100, 0.5);
+}
+/* line 115, ../sass/style.sass */
+.pageNav nav ul li {
+  float: left;
+}
+/* line 117, ../sass/style.sass */
+.pageNav nav ul li :hover {
+  background-color: #ff0064;
+}
+/* line 120, ../sass/style.sass */
+.pageNav nav ul li a {
+  text-decoration: none;
+  padding: 0.5em 2em;
+  display: block;
+}
+
+/* line 126, ../sass/style.sass */
+.sitem {
+  width: 200px;
+  height: 300px;
+  margin: 30px;
+  float: left;
+  background-color: rgba(100, 255, 255, 0.4);
+}
+/* line 133, ../sass/style.sass */
+.sitem h1 {
+  padding-top: 20px;
+}
+/* line 136, ../sass/style.sass */
+.sitem img {
+  width: 180px;
+  height: auto;
+  margin: auto;
+  display: block;
+}

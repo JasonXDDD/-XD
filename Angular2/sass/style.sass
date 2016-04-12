@@ -1,0 +1,144 @@
+// import font from google font
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono)
+
+@import _reset
+@import _mixin
+@import compass/css3
+
+body
+	main
+		background-color: rgba(0,0,0,.6)
+		position: fixed
+		overflow-y: scroll
+		width: 100%
+		height: 100%
+		left: 240px
+		top: 45px	
+
+
+//background
+.bg
+	width: 100%
+	height: 100%
+	display: block
+	position: fixed
+	z-index: -1
+	margin: 0
+	padding: 0
+
+
+//user nav
+.userNav 
+	background-color: rgba(0,0,0,.8)
+	display: block
+	position: fixed
+	width: 240px
+	height: 100%
+	top: 0
+	left: 0
+
+	hr
+		margin: 10% 8%
+
+	nav
+		ol
+			padding: 0
+
+			li
+				+bgColor(rgba( 0, 255, 255, .1))
+				list-style-type: none
+
+				\:hover
+					+bgColor(rgba( 0, 255, 255, .6))
+
+				\:first-letter
+					font-size: 30px
+					font-weight: 500
+					color: rgba(255, 100, 100, 1)
+
+				a
+					@extend %fontA
+					padding: 0 5%
+					display: block
+					weight: 100%
+						
+	
+
+.headDiv
+	+bg(rank, png, 200px)
+	// background-color: #3c3c3c
+	margin: 1em auto
+	display: flex
+
+	img
+		display: flex
+		align-items: center
+		width: 50%
+		height: auto
+		margin: auto	
+		+border-radius(50%)
+		border: 3px solid white
+	
+	h1
+		display: block
+		position: fixed
+		left: 0 
+		top: 180px
+		width: 240px
+		margin: 0
+
+		@extend %fontH1
+	
+.info
+	@extend %fontP
+	
+
+//page nav
+.pageNav
+	// background-color: rgba(255, 100, 0, .6)
+	width: 100%
+	height: 30px
+	top: 0
+	position: fixed
+	display: block
+	left: 240px
+	z-index: 10
+
+	nav
+		ul 
+			list-style-type: none
+			padding: 0
+			margin: 0
+			overflow: hidden
+			background-color: rgba(255,100,100,.5)
+
+			li 
+				float: left
+				\:hover
+					+bgColor(rgba( 255, 0, 100, 1))
+				
+				a
+					@extend %fontH1
+					text-decoration: none
+					padding: .5em 2em
+					display: block
+					
+.sitem
+	width: 200px
+	height: 300px
+	margin: 30px
+	float: left
+
+	background-color: rgba(100, 255, 255, .4)
+	h1
+		@extend %fontH1
+		padding-top: 20px
+	img 
+		width: 180px
+		height: auto
+		margin: auto
+		display: block
+	p
+		@extend %fontP
+
+ 
