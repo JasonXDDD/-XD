@@ -1,6 +1,12 @@
 import {Sitem} from './component';
-import {SitemService} from '../services/sitemDataService';
+// import {SitemService} from '../services/sitemDataService';
 import {bootstrap} from 'angular2/platform/browser';
 import "rxjs/Rx";
 
-bootstrap(Sitem);
+import {ROUTER_PROVIDERS, APP_BASE_HREF} from 'angular2/router';
+import {provide} from 'angular2/core';
+
+
+bootstrap(Sitem, [ROUTER_PROVIDERS,
+	provide(APP_BASE_HREF, {useValue: '/haha'})
+]);

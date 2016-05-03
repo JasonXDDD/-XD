@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 import {NgFor} from 'angular2/common';
-import {SitemService} from '../services/sitemDataService';
+import {SitemService} from './sitemDataService';
 import {HTTP_PROVIDERS}    from 'angular2/http';
 
 @Component({
