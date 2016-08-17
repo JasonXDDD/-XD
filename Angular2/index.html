@@ -1,45 +1,43 @@
 <html>
-  <head>
+
+<head>
     <title>ReZuhzuXD in ng2</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-     <title>zuhzu template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>zuhzu template</title>
     <!-- owl carousel -->
     <link rel="stylesheet" href="lib/owl.carousel/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css">
     <!-- animate -->
     <link rel="stylesheet" type="text/css" href="lib/animate.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-
-
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
-
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/http.dev.js"></script>
-
     <!-- 2. Configure SystemJS -->
     <script>
-      System.config({
-        packages: {        
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
+    System.config({
+        packages: {
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
         }
-      });
-      System.import('app/main')
-            .then(null, console.error.bind(console));
+    });
+    System.import('app/main')
+        .then(null, console.error.bind(console));
     </script>
-  </head>
+</head>
+<base href="/">
+<!-- 3. Display the application -->
 
-  <!-- 3. Display the application -->
-  <body>
+<body>
     <div class="bg">
         <div class="owl-carousel">
             <div class="item"><img src="images/bg.jpg" alt=""></div>
@@ -78,13 +76,14 @@
         </nav>
     </aside>
     <main ng-controller="mainCtrl">
-            <sitems></sitems>
+        <!-- <sitems></sitems> -->
+        <click-me></click-me>
+
         </div>
     </main>
-  </body>
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="lib/owl.carousel/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="lib/owl.carousel/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </html>
